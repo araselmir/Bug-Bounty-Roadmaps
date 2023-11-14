@@ -1,0 +1,4 @@
+let BaseCard = {};
+{{#getCardPartials url verticalConfigs }}
+  {{> (lookup . 'cardPartial') relativePath=../relativePath }}
+{{/getCardPartials}}
